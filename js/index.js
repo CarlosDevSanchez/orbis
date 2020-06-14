@@ -1,10 +1,9 @@
-document.addEventListener('DOMContentLoaded', function(){
+$(document).ready(function(){
     inicio.iniciarJuego();
-}, false);
+});
 
 let inicio = {
     iniciarJuego: function(){
-        dimenciones.iniciar();
         buclePrincipal.iterar();
     }
 };

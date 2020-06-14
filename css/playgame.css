@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: 'Lemon/Milk';
+    src: url('http://www.fontsaddict.com/fontface/lemonmilk.ttf');
+}
+
+
 .lienzo-principal{
     height: 625px;
     width: 100%;
@@ -32,8 +39,8 @@
     width: 128px;
     background-image: url('../src/game/sprites/Persons-sprites1.png');
     background-repeat: no-repeat;
-    left: 35.5%;
-    margin-top: 188px;
+    left: 30%;
+    margin-top: 120px;
     
 }
 
@@ -137,5 +144,85 @@
     position: relative;
     left: 20px;
     top: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lemon/Milk';
+}
+
+
+#slider-box {
+    height: 100%;
+    width: 300%;
+}
+
+#slider-container {
+    position: absolute;
+    overflow: hidden;
+    width: 365px;
+    margin-top: 52px;
+    left: 10%;
+}
+
+.element-blue,
+.element-green,
+.element-red {
+    min-height: 363px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.element-blue {
+    background: url('../src/game/estaciones/brazil.svg');
+}
+
+.element-green {
+    background: url('../src/game/estaciones/eeuu.svg');
+}
+
+.element-red {
+    background: url('../src/game/estaciones/colombia.svg');
+}
+
+.slider-element {
+    float: left;
+    width: 33.333%;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2),
+#element2:checked ~ #slider-arrows label:nth-child(3),
+#element3:checked ~ #slider-arrows label:nth-child(1) {
+    display: block;
+    float: right;
+}
+
+.animation-inicie{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-container #slider-box {
+    margin-left: 0;
+}
+
+#element2:checked ~ #slider-container #slider-box {
+    margin-left: -100%;
+}
+
+#element3:checked ~ #slider-container #slider-box {
+    margin-left: -200%;
+}
+
+#slider-arrows label {
+    color: transparent;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 20px;
+    width: 20px;
+}
+
+#slider-box {
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
 }

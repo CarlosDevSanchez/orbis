@@ -9,9 +9,11 @@
 }
 
 .bg-image {
-	background-image: url('/src/background-login.png');
-	background-size: cover;
+	background-image: url('/src/game/background/sketch_ORBIS.svg');
+	background-repeat: no-repeat;
+	background-size: fixed;
 	background-position: center;
+	left: 30px;
 }
 
 .login-heading {
