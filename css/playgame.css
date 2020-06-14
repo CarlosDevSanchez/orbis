@@ -1,0 +1,141 @@
+.lienzo-principal{
+    height: 625px;
+    width: 100%;
+    background: url('../src/game/background/Tableros_Orbis.svg');
+    background-repeat: no-repeat;
+}
+
+.tablero-game{
+    position: absolute;
+    height: 465px;
+    width: 500px;
+    background-image: url('../src/game/background/tablero-game.svg');
+    background-repeat: no-repeat;
+    top: 62px;
+    left: 33.2%;
+}
+
+.banner{
+    background: url('../src/game/background/banner-1.png');
+    background-repeat: no-repeat;
+    height: 366px;
+    width: 365px;
+    position: relative;
+    left: 10%;
+    top: 50px;
+}
+
+
+.personaje{
+    position: absolute;
+    height: 170px;
+    width: 128px;
+    background-image: url('../src/game/sprites/Persons-sprites1.png');
+    background-repeat: no-repeat;
+    left: 35.5%;
+    margin-top: 188px;
+    
+}
+
+.animation-personaje-show{
+    animation: correr 1s steps(8) infinite;
+}
+
+@keyframes correr{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1024px;
+    }
+}
+
+.initial{
+    position: relative;
+    background: url('../src/game/background/sketch_ORBIS.svg');
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+}
+
+.button-play{
+    cursor: pointer;
+    height: 350px;
+    width: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+}
+
+.mensaje{
+    background: url('../src/game/components/messageUp.png');
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 160px;
+    left: 19%;
+    top: 80px;
+    position: absolute;
+}
+
+:root{
+    --sheet-position: 10px;
+}
+
+.ficha{
+    background: url('../src/game/components/sheet.png');
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 28px;
+    margin-top: 10px;
+    margin-left: var(--sheet-position);
+    position: absolute;
+}
+
+.animation-sheet{
+    animation-name: moveSheet;
+    animation-duration: 2s;
+}
+
+@keyframes moveSheet{
+    0%{
+        margin-left: 10px;
+    }
+    15%{
+        margin-left: calc(var(--sheet-position) + 20px);
+    }
+    50%{
+        margin-left: calc(var(--sheet-position) + 30px);
+    }
+    75%{
+        margin-left: calc(var(--sheet-position) + 40px);
+    }
+    100%{
+        margin-left: calc(var(--sheet-position) + 50px);
+    }
+}
+
+.stark{
+    background: url('../src/game/components/stark-3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: 83%;
+}
+
+.personaje-principal{
+    background: url('../src/game/background/personaje-principal-portada.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 600px;
+    width: 200px;
+    left: 8%;
+    top: 72px;
+}
+.dialog{
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

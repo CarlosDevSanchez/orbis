@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+		<title>Login</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <title>The Big Picture - Start Bootstrap Template</title>
+		<!-- Custom styles for this template -->
+		<link href="css/login.css" rel="stylesheet" />
+	</head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<body>
+		<div class="container-fluid">
+			<div class="row no-gutter">
+				<div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+				<div class="col-md-12 col-lg-6">
+					<div class="login d-flex align-items-center py-5">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-9 col-lg-8 mx-auto">
+									<div class="row">
+										<div class="col-lg-12 align-items-center">
+											<img class="img-fluid" src="src/AMAO.png" />
+										</div>
+									</div>
+									<h3 class="login-heading mb-4 text-center">¡Bienvenido a ORBIS!</h3>
+									<form id="formLogin" method="POST">
 
-  <!-- Custom styles for this template -->
-  <link href="css/the-big-picture.css" rel="stylesheet">
+										<div class="form-label-group">
+											<input type="text" name="inputUsername" class="form-control" placeholder="Nombre de usuario" required autofocus />
+											<label>Nombre de usuario</label>
+										</div>
 
-</head>
+										<div class="form-label-group">
+											<input type="password" name="inputPassword" class="form-control" placeholder="Contraseña" required />
+											<label>Contraseña</label>
+										</div>
 
-<body>
+										<button name="login" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">
+											Iniciar sesion
+										</button>
+										<div class="text-center">
+											<a class="small" href="#">¿Contraseña olvidada?</a>
+											<span>.</span>
+											<a class="small" href="./views/register.php">Soy nuevo en Orbis</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-    <div class="container">
-      <a class="navbar-brand" href="/login.php">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="mt-5">The Big Picture</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+		<!-- Bootstrap core JavaScript -->
+		<script src="./vendor/jquery/jquery.min.js"></script>
+		<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="./js/form.js"></script>
+	</body>
 </html>
