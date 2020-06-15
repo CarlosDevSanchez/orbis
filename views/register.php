@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
+		<title>ORBIS || AMAO Musical</title>
 		<!-- Bootstrap core CSS -->
 		<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<!-- Custom styles for this template -->
@@ -25,6 +25,16 @@
 										</div>
 
 										<div class="form-label-group">
+											<input type="text" name="inputName" class="form-control" placeholder="Nombre" required />
+											<label>Nombre</label>
+										</div>
+
+										<div class="form-label-group">
+											<input type="text" name="inputLastname" class="form-control" placeholder="Apellido" required />
+											<label>Apellido</label>
+										</div>
+
+										<div class="form-label-group">
 											<input type="text" name="inputUsername" class="form-control" placeholder="Nombre de usuario" required />
 											<label>Nombre de usuario</label>
 										</div>
@@ -34,18 +44,13 @@
 											<label>Contraseña</label>
 										</div>
 
-                                        <div class="form-label-group">
-											<input type="password" name="newinputPassword" class="form-control" placeholder="De nuevo contraseña" required />
-											<label>De nuevo contraseña</label>
-										</div>
-
 										<button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">
 											Registrarme
 										</button>
-										<div class="text-center">
-											<a class="small" href="../index.php">Volver al inicio de sesion</a>
-										</div>
 									</form>
+									<div class="text-center">
+										<a class="small" href="../index.php">Volver al inicio de sesion</a>
+									</div>
 								</div>
                             </div>
                         </div>
@@ -54,4 +59,7 @@
             </div>
         </div>
     </body>
+	<script src="../vendor/jquery/jquery.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../js/form.js"></script>
 </html>

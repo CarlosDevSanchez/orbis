@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Login</title>
+		<title>ORBIS || AMAO Musical</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -40,15 +40,15 @@
 											<label>Contraseña</label>
 										</div>
 
-										<button name="login" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">
+										<button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">
 											Iniciar sesion
 										</button>
-										<div class="text-center">
-											<a class="small" href="#">¿Contraseña olvidada?</a>
-											<span>.</span>
-											<a class="small" href="./views/register.php">Soy nuevo en Orbis</a>
-										</div>
 									</form>
+									<div class="text-center">
+										<a class="small" href="#">¿Contraseña olvidada?</a>
+										<span>.</span>
+										<a class="small" href="./views/register.php">Soy nuevo en Orbis</a>
+									</div>
 								</div>
 							</div>
 						</div>
