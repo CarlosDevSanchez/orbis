@@ -15,13 +15,16 @@
   <link rel="stylesheet" href="../vendor/dropzone-5.7.0/dist/dropzone.css">
   <script src="../vendor/dropzone-5.7.0/dist/dropzone.js"></script>
 
+  <!-- @Carlos, bro este es un pequeño css para redondear el modal -->
+  <link rel="stylesheet" href="../css/dz-upload-file.css">
+
   <!-- Custom styles for this template -->
   <link href="../css/playgame.css" rel="stylesheet">
 
 </head>
 
 <body>
-<audio src="../audio/viva-la-vida.mp3" autoplay="autoplay" loop="loop"></audio>
+<!-- <audio src="../audio/viva-la-vida.mp3" autoplay="autoplay" loop="loop"></audio> -->
   <div class="container-fluid">
     <div class="lienzo-principal">
       <div class="personaje-principal"></div>
@@ -61,26 +64,28 @@
       </div>
     </div>
   </div>
-
   <div class="modal fade" id="modalDropzone" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-body">
-        <div id="dropzone">
-          <form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
-            <div class="dz-message needsclick">
-              <button type="button" class="dz-button">Drop files here or click to upload.</button><br>
-              <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
-            </div>
-          </form>
-        </div>
+    <div class="modal-body">
+      <div id="dropzone">
+        <form action="../php/upload-file.php" class="dropzone needsclick dz-clickable" id="myDrop">
+          <div class="dz-message needsclick">
+            <h1>¡Genial! <span>Es hora de subir la actividad...</span></h1>
+            <button type="button" class="dz-button">Suelte los archivos aquí o haga clic para cargar.</button><br />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+  <!-- End Modal -->
+
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../js/index.js"></script>
-
+  <script src="../js/upload-file.js"></script>
 </body>
-
 </html>
