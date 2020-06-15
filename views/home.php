@@ -26,26 +26,28 @@
     <div class="lienzo-principal">
       <div class="personaje-principal"></div>
       <div class="stark"></div>
-      <div class="mensaje">
-        <p class="dialog">Hola a todos.</p>
-      </div>
+      <p class="globo">Hola, bienvenidos a ORBIS</p> 
+      <div class="left-arrow"></div>
       <div class="tablero-game">
         <div class="ficha"></div>
-        <div id="slider-container">
-          <div id="slider-box">
-            <div class="personaje "></div>
-              <div class="slider-element">
-                  <article class="element-red">
-                  </article>
-              </div>
-              <div class="slider-element">
-                  <article class="element-green">
-                  </article>
-              </div>
-              <div class="slider-element">
-                  <article class="element-blue">
-                  </article>                        
-              </div>
+      </div>
+      <div id="carrusel">
+        <div class="personaje"></div>
+        <div class="carrusel">
+          <div class="element" id="element-0">
+            <img src="../src/game/estaciones/bqlla-1.svg" width="455" height="360" />
+          </div>
+          <div class="element" id="element-1">
+            <img src="../src/game/estaciones/bqlla-2.svg" width="455" height="360" />
+          </div>
+          <div class="element" id="element-2">
+            <img src="../src/game/estaciones/bqlla-3.svg" width="455" height="360" />
+          </div>
+          <div class="element" id="element-3">
+            <img src="../src/game/estaciones/bqlla-3.svg" width="455" height="360" />
+          </div>
+          <div class="element" id="element-4">
+            <img src="../src/game/estaciones/bqlla-3.svg" width="455" height="360" />
           </div>
         </div>
       </div>
@@ -59,6 +61,7 @@
       </div>
     </div>
   </div>
+
   <div class="modal fade" id="modalDropzone" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-body">
@@ -76,24 +79,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <script>
-    $(document).ready(function(){
-      //$('#modalInitial').modal({keyboard: false});
-      $('#modalDropzone').modal({keyboard: false});
-      $('#button').on('click', function(){
-        console.log('ingrese aca')
-        $('#modalInitial').modal('hide');
-        
-      })
-
-      const dropzone = $('#fileVideo')
-      dropzone.on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-      })
-    });
-  </script>
+  <script src="../js/index.js"></script>
 
 </body>
 
