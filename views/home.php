@@ -47,10 +47,10 @@
             <img src="../src/game/estaciones/bqlla-3.svg" width="455" height="360" />
           </div>
           <div class="element" id="element-3">
-            <img src="../src/game/estaciones/bqlla-3.svg" width="455" height="360" />
+            <img src="../src/game/estaciones/catgna-1.svg" width="455" height="360" />
           </div>
           <div class="element" id="element-4">
-            <img src="../src/game/estaciones/bqlla-3.svg" width="455" height="360" />
+            <img src="../src/game/estaciones/bgta-1.svg" width="455" height="360" />
           </div>
         </div>
       </div>
@@ -70,11 +70,14 @@
         <form action="../php/upload-file.php" class="dropzone needsclick dz-clickable" id="myDrop">
           <div class="dz-message needsclick">
             <h1>¡Genial! <span>Es hora de subir la actividad...</span></h1>
+            <h2 class="actividad-title"></h2>
+            <p class="actividad-text"></p>
+            <iframe src="" class="actividad-add" frameborder="0"></iframe>
             <button type="button" class="dz-button">Suelte los archivos aquí o haga clic para cargar.</button><br />
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Guardar cambios</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" id="modalDropzoneDismiss">Cerrar</button>
           </div>
         </form>
       </div>
